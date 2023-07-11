@@ -1,0 +1,152 @@
+# Author: Jing Wang, for Program Design
+# try_request2 is a Unix shell script that will be used to test project 10.
+# To use the script, copy it into the same directory as your scource file
+# Set execute permission for the file by issuing the command:
+# chmod +x try_request2
+# Compile your program, producing a.out as the executable
+# To run the script, type
+# ./try_request2
+# The user input from the script will not be shown on the screen.
+# Compare the results from your program with the expected results on the test cases.
+echo '===================================================='
+./book_requests <<-EndOfInput
+a
+How to Babysit a Grandma
+Jean
+Reagan
+Infant
+16.99
+a
+The Most Magnificent Thing
+Ashley
+Spires
+Toddler
+16.95
+a
+Jokes for Kids
+Whee
+Winn
+Pre-K
+4.99
+a
+Strictly No Elephants
+Lisa
+Mantchev
+Toddler
+17.99
+p
+a
+Jokes for Kids
+Rob
+Elliott
+Pre-K
+4.99
+p
+a
+A Memory of the Future: Poems
+Elizabeth
+Spires
+Pre-K
+8.99
+p
+a
+Beyond Our Selves
+Catherine
+Spires
+Pre-K
+15.99
+p
+q
+EndOfInput
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Enter opertion code: a'
+echo 'Enter title: How to Babysit a Grandma'
+echo 'Enter author first name: Jean'
+echo 'Enter author last name: Reagan'
+echo 'Enter classroom: Infant'
+echo 'Enter price: 16.99'
+echo '===================================================='
+echo 'Expected:'
+echo 'Enter opertion code: a'
+echo 'Enter title: The Most Magnificent Thing'
+echo 'Enter author first name: Ashley'
+echo 'Enter author last name: Spires'
+echo 'Enter classroom: Toddler'
+echo 'Enter price: 16.95'
+echo '===================================================='
+echo 'Expected:'
+echo 'Enter opertion code: a'
+echo 'Enter title: Jokes for Kids'
+echo 'Enter author first name: Whee'
+echo 'Enter author last name: Winn'
+echo 'Enter classroom: Pre-K'
+echo 'Enter price: 4.99'
+echo '===================================================='
+echo 'Expected:'
+echo 'Enter opertion code: a'
+echo 'Enter title: Strictly No Elephants'
+echo 'Enter author first name: Lisa'
+echo 'Enter author last name: Mantchev' 
+echo 'Enter classroom: Toddler'
+echo 'Enter price: 17.99'
+echo '=========================================================================================='
+echo 'Enter operation code: p'
+echo 'Title                                   First Name      Last Name       Classroom  Price'
+echo 'Strictly No Elephants                   Lisa           Mantchev           Toddler	  17.99'
+echo 'How to Babysit a Grandma                Jean           Reagan             Infant	  16.99'
+echo 'The Most Magnificent Thing              Ashley         Spires             Toddler   16.95'
+echo 'Jokes for Kids                          Whee           Winn               Pre-K     4.99'
+echo '=========================================================================================='
+echo 'Expected:'
+echo 'Enter opertion code: a'
+echo 'Enter title: Jokes for Kids'
+echo 'Enter author first name: Rob'
+echo 'Enter author last name: Elliott'
+echo 'Enter classroom: Pre-K'
+echo 'Enter price: 4.99'
+echo '========================================================================================='
+echo 'Enter operation code: p'
+echo 'Title                                   First Name      Last Name       Classroom  Price'
+echo 'Jokes for Kids                          Rob            Elliott            Pre-K     4.99'
+echo 'Strictly No Elephants                   Lisa           Mantchev           Toddler   17.99'
+echo 'How to Babysit a Grandma                Jean           Reagan             Infant    16.99'
+echo 'The Most Magnificent Thing              Ashley         Spires             Toddler   16.95'
+echo 'Jokes for Kids                          Whee           Winn               Pre-K     4.99'
+echo '========================================================================================='
+echo 'Expected:'
+echo 'Enter opertion code: a'
+echo 'Enter title: A Memory of the Future: Poems'
+echo 'Enter author first name: Elizabeth'
+echo 'Enter author last name: Spires'
+echo 'Enter classroom: Pre-K'
+echo 'Enter price: 6.99'
+echo '========================================================================================='
+echo 'Enter operation code: p'
+echo 'Title                                   First Name      Last Name       Requests  Price'
+echo 'Jokes for Kids                          Rob            Elliott            Pre-K    4.99'
+echo 'Strictly No Elephants                   Lisa           Mantchev           Toddler  17.99'
+echo 'How to Babysit a Grandma                Jean           Reagan             Infant   16.99'
+echo 'The Most Magnificent Thing              Ashley         Spires             Toddler  16.95'
+echo 'A Memory of the Future: Poems           Elizabeth      Spires             Pre-K    8.99'
+echo 'Jokes for Kids                          Whee           Winn               Pre-K    4.99'
+echo '========================================================================================='
+echo 'Expected:'
+echo 'Enter operation code: a'
+echo 'Enter title: Beyond Our Selves'
+echo 'Enter author first name: Catherine'
+echo 'Enter author last name: Spires'
+echo 'Enter classroom: Pre-K'
+echo 'Enter price: 15.99'
+echo '========================================================================================'
+echo 'Enter operation code: p'
+echo 'Title                                   First Name      Last Name       Requests  Price'
+echo 'Jokes for Kids                          Rob            Elliott            Pre-K    4.99'
+echo 'Strictly No Elephants                   Lisa           Mantchev           Toddler  17.99'
+echo 'How to Babysit a Grandma                Jean           Reagan             Infant   16.99'
+echo 'The Most Magnificent Thing              Ashley         Spires             Toddler  16.95'
+echo 'Beyond Our Selves                       Catherine      Spires             Pre-K    15.99'
+echo 'A Memory of the Future: Poems           Elizabeth      Spires             Pre-K    8.99'
+echo 'Jokes for Kids                          Whee           Winn               Pre-K    4.99'
+echo '========================================================================================'
+echo 'Enter operation code: q'
